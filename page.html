@@ -1,11 +1,29 @@
+<!DOCTYPE html>
 <html>
+  <style>
+    .link-picture {
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	pointer-events: none;
+	-moz-box-pack: center;
+	justify-content: center;
+	-moz-box-align: center;
+	align-items: center;
+	border-radius: 12px;
+	width: 46px;
+	height: 46px;
+    }
+  </style>
+
   <head> 
     <meta property="og:title" content="小杨杂谈信息矩阵">
   </head>
   
   <body>
     <div class="flex flex-col items-center">
-      <div id="profile-picture"><img class="rounded-full object-contain" src="" alt="小杨杂谈" style="width:96px;height:96px" role="presentation"></div>
+      <div id="profile-picture"><img class="rounded-full object-contain" src="https://kirakira0306.github.io/Test/Wechat.jpg" alt="小杨杂谈" role="presentation"></div>
       <div class="profile title" id="profile-title"><h1 class="text-ellipsis text-balance text-center text-lg font-[700] leading-[1.5] text-bodyText" id="profile-小杨杂谈">小杨杂谈</h1></div>
     </div>
     
@@ -14,11 +32,53 @@
         <a href="https://www.bilibili.com">
           <button class="link button" height="auto">
             <div>
-              <div><img src="" alt="微信公众号" loading="lazy" crossorigin="" class="link picture"></div>
+              <div class="link-picture"><img src="https://kirakira0306.github.io/Test/Zhihu.jpg" alt="微信公众号" loading="lazy" class="link picture"></div>
               <p>微信公众号</p>
             </div>
           </button>
         </a>
+      </div>
+    </div>
+
+    <div class="links container" id="links-container">
+        <div> 
+          <a href="https://space.bilibili.com/66953239">
+            <button class="link button" height="auto">
+              <div>
+                <div class="link-picture"><img src="https://kirakira0306.github.io/Test/Bilibili.jpg" alt="B站" loading="lazy" class="link picture"></div>
+                <p>bilibili</p>
+              </div>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="links container" id="links-container">
+        <div> 
+          <a href="https://www.douban.com/people/xyzt1">
+            <button class="link button" height="auto">
+              <div>
+                <div class="link-picture"><img src="https://kirakira0306.github.io/Test/Douban.jpg" alt="豆瓣" loading="lazy" class="link picture"></div>
+                <p>豆瓣</p>
+              </div>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="links container" id="links-container">
+        <div> 
+          <a href="https://www.zhihu.com/people/edison-97-85">
+            <button class="link button" height="auto">
+              <div>
+                <div class="link-picture"><img src="https://kirakira0306.github.io/Test/Zhihu.jpg" alt="知乎" loading="lazy" class="link picture"></div>
+                <p>知乎</p>
+              </div>
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   </body>
